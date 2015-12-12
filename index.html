@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Paint With LREI Seniors</title>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link href='reset.css' rel='stylesheet' type='text/css'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link href="remodal.css" rel="stylesheet"  type='text/css'>
+
+<meta name="description" content="Deal with it" />
+<link rel="canonical" href="http://paintwithdonaldtrump.com/" />
+
+<meta property="og:title" content="Paint With Donald Trump" />
+<meta property="og:site_name" content="PWDT"/>
+<meta property="og:url" content="http://paintwithdonaldtrump.com/" />
+<meta property="og:description" content="Deal with it" />
+<meta property="og:image" content="http://i.imgur.com/5uhshRF.png" />
+<meta property="fb:app_id" content="412816462250749" />
+<meta property="og:type" content="website" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@PaintWithTrump" />
+<meta name="twitter:title" content="Paint With Donald Trump" />
+<meta name="twitter:description" content="Deal with it" />
+<meta name="twitter:image:src" content="http://i.imgur.com/xLlnCia.png" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-66693631-1', 'auto');
+	if(/\.com\/i/.test(window.location.href)) {
+		ga('set', 'referrer', 'http://imgur.com/');
+		var stateObj = { foo: "bar" };
+		history.pushState(stateObj, "", "/");
+	}
+	ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+
+<div id="controlBar">
+	
+	<div id="social">
+		<ul>
+			<!---<li><div class="fb-like" data-href="http://paintwithdonaldtrump.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://paintwithdonaldtrump.com/" data-text="Paint With Donald Trump (@realDonaldTrump)">Tweet</a></li> --->
+		</ul>
+	</div>
+	
+	<div id="clearAndSave">
+		<button class="controlButton" id="clearPainting">Clear</button>
+		<button class="controlButton" id="savePainting">Save Painting</button>
+	</div>
+
+	<div id="brushControls">
+		
+		<div id="brushSizeLabel">SIZE</div>
+		<div id="brushSizeContainer">
+			<button data-brush-size="Small" class="brushSizeButton" id="brushSizeButtonSmall" title="Small"></button>
+			<button data-brush-size="Medium" class="brushSizeButton brushSizeButtonSelected" id="brushSizeButtonMedium" title="Medium"></button>
+			<button data-brush-size="Large" class="brushSizeButton" id="brushSizeButtonLarge" title="Large"></button>
+		</div>
+
+		<div id="brushFaceLabel">PERSON</div>
+		<div id="brushFaceOuter">
+			<div id="brushFaceInner">
+				
+				<button data-brush-number="1" id="trumpBrush1Menu" class="trumpBrushMenu trumpBrushMenuSelected" title="Side Trump"></button>
+				<button data-brush-number="2" id="trumpBrush2Menu" class="trumpBrushMenu" title="Rage Trump"></button>
+				<button data-brush-number="3" id="trumpBrush3Menu" class="trumpBrushMenu" title="Cool Trump"></button>
+				<button data-brush-number="4" id="trumpBrush4Menu" class="trumpBrushMenu" title="Kiss Trump"></button>
+				<button data-brush-number="5" id="trumpBrush5Menu" class="trumpBrushMenu" title="Poo Trump"></button>
+				<button data-brush-number="6" id="trumpBrush6Menu" class="trumpBrushMenu" title="Smug Trump"></button>
+				<button data-brush-number="8" id="trumpBrush8Menu" class="trumpBrushMenu" title="Fart Trump"></button>
+				<button data-brush-number="7" id="trumpBrush7Menu" class="trumpBrushMenu" title="Windswept Trump"></button>
+                <button data-brush-number="9" id="trumpBrush9Menu" class="trumpBrushMenu" title="Amelia Trump"></button>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<div id="paintingArea">
+	<div id="pwdtWatermark">PaintWithDonaldTrump.com</div>
+</div>
+<div id="mousePointer" class="trumpBrush1Medium"></div>
+
+
+<div data-remodal-id="modal">
+	<button data-remodal-action="close" class="remodal-close"></button>
+
+	<div id="uploadStage1">
+		<h2 style="font-size:23px; color:#CF181F; margin-bottom:13px">Add a caption</h2>
+		<img class="uploadPreview" id="uploadPreview1">
+		<textarea id="paintingCaption" placeholder="Caption..."></textarea>
+		<button data-remodal-action="confirm" class="remodal-confirm">Save</button>
+	</div>
+
+	<div id="uploadStage2" style="display:none">
+		<h2 style="font-size:23px; color:#CF181F; margin-bottom:13px">Saving...</h2>
+		<img src="loading.gif">
+	</div>
+
+	<div id="uploadStage3" style="display:none">
+		<h2 style="font-size:23px; color:#CF181F; margin-bottom:13px">Saved!</h2>
+
+		<a target="_blank" id="imgUploadURLLink" href=""><img class="uploadPreview" id="uploadPreview2"></a>
+		<input id="imgUploadURL" type="text" >
+
+		<div style="margin:23px 0 33px 0">
+			<div style="margin-bottom:14px; color:#CF181F; font-weight: 800;">Share your painting</div>
+			<span id="tweetPaintingContainer"></span>
+			<img id="fbSharePainting" src="fbshare.png" />
+		</div>
+
+	</div>
+
+
+	
+	<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px;margin-top:43px;"
+     data-ad-client="ca-pub-7576731004643152"
+     data-ad-slot="5375329823"></ins>
+
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62964806-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70138646-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="jqmob.plus.html2canvas.min.js"></script>
+<script src="app.js"></script>
+<script src="remodal.min.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+---->
+
+</body>
+</html>

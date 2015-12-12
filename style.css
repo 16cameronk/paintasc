@@ -1,0 +1,764 @@
+body {
+	font-family: 'Droid Sans', Arial;
+	overflow:hidden;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#paintingArea {
+	overflow:hidden;
+	cursor: none;
+	background-color:#fff;
+	position:fixed!important;
+	top:48px;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+#pwdtWatermark {
+	display: none;
+	position:absolute;
+	z-index: 1;
+	text-shadow:1px 1px 3px #000, 4px 3px 10px rgba(0, 0, 0, 0.35);
+	top:7px;
+	right:9px;
+	font-size:15px;
+	color:#fff;
+}
+
+.last {
+	color: #b1AFAF;
+	float:right;
+	font-size:14px;
+	display: none;
+	margin: 15px 15px 0 0;
+}
+
+
+#mousePointer {
+	position: absolute;
+	cursor: none;
+	z-index:1000;
+	top:150px;
+	left:150px;
+}
+
+#fbSharePainting {
+	width:56px;
+	height:20px;
+	cursor:pointer;
+}
+
+
+
+/*single drop of trump ink regardless of size/brush */
+.trumpInk {
+	position: absolute;
+	
+}
+
+
+/* Brush faces */
+
+
+.trumpBrush1Small, .trumpBrush1Medium, .trumpBrush1Large, #trumpBrush1Menu {
+	background: url(brushes/Christina.png);
+	background-size:100%;
+}
+
+.trumpBrush2Small, .trumpBrush2Medium, .trumpBrush2Large, #trumpBrush2Menu {
+	background: url(brushes/Alessandra.png);
+	background-size:100%;
+}
+
+.trumpBrush3Small, .trumpBrush3Medium, .trumpBrush3Large, #trumpBrush3Menu {
+	background: url(brushes/Acacia%20.png);
+	background-size:100%;
+}
+
+.trumpBrush4Small, .trumpBrush4Medium, .trumpBrush4Large, #trumpBrush4Menu {
+	background: url(brushes/Amanda.png);
+	background-size:100%;
+}
+
+.trumpBrush5Small, .trumpBrush5Medium, .trumpBrush5Large, #trumpBrush5Menu {
+	background: url(brushes/Ruben.png);
+	background-size:100%;
+}
+
+.trumpBrush6Small, .trumpBrush6Medium, .trumpBrush6Large, #trumpBrush6Menu {
+	background: url(brushes/Michael.png);
+	background-size:100%;
+}
+
+.trumpBrush7Small, .trumpBrush7Medium, .trumpBrush7Large, #trumpBrush7Menu {
+	background: url(brushes/Robert.png);
+	background-size:100%;
+}
+
+.trumpBrush8Small, .trumpBrush8Medium, .trumpBrush8Large, #trumpBrush8Menu {
+	background: url(brushes/isiah.png);
+	background-size:100%;
+}
+
+
+.trumpBrush9Small, .trumpBrush9Medium, .trumpBrush9Large, #trumpBrush9Menu {
+	background: url(brushes/amelia.png);
+	background-size:100%;
+}
+
+
+
+/* Brush menu sizes */
+
+.trumpBrushMenu {
+	float:left;
+	margin-right:6px;
+	cursor: pointer;
+}
+
+.trumpBrushMenu:hover {
+	background-color: #FACBA5 !important;
+}
+
+
+.trumpBrushMenuSelected {
+	background-color: #FACBA5 !important;
+	border-radius: 3px !important;
+	border: 2px solid #FACBA5;
+}
+
+#trumpBrush1Menu {
+	width: 38px;
+	height: 37px;
+}
+
+#trumpBrush2Menu {
+	width: 38px;
+	height: 37px;
+}
+
+#trumpBrush3Menu {
+	width: 38px;
+	height: 38px;
+}
+
+#trumpBrush4Menu {
+	width: 39px;
+	height: 39px;
+}
+
+#trumpBrush5Menu {
+	width: 39px;
+	height: 39px;
+}
+
+#trumpBrush6Menu {
+	width: 39px;
+	height: 39px;
+}
+
+#trumpBrush7Menu {
+	width: 30px;
+	height: 39px;
+	margin-top: -8px;
+}
+
+#trumpBrush8Menu {
+	width: 39px;
+	height: 39px;
+}
+#trumpBrush9Menu {
+	width: 39px;
+	height: 39px;
+}
+
+
+
+
+
+/* Small brush sizes */
+
+
+.trumpBrush1Small {
+	width: 29px;
+	height: 28px;
+}
+
+.trumpBrush2Small {
+	width: 26px;
+	height: 27px;
+}
+
+.trumpBrush3Small {
+	width: 26px;
+	height: 33px;
+}
+
+.trumpBrush4Small {
+	width: 27px;
+	height: 34px;
+}
+
+.trumpBrush5Small {
+	width: 27px;
+	height: 33px;
+}
+
+.trumpBrush6Small {
+	width: 27px;
+	height: 34px;
+}
+
+.trumpBrush7Small {
+	width: 28px;
+	height: 43px;
+}
+
+.trumpBrush8Small {
+	width: 27px;
+	height: 36px;
+}
+
+
+.trumpBrush9Small {
+	width: 27px;
+	height: 36px;
+}
+
+
+
+
+/* Medium brush sizes */
+
+
+.trumpBrush1Medium {
+	width: 55px;
+	height: 54px;
+}
+
+.trumpBrush2Medium {
+	width: 48px;
+	height: 51px;
+}
+
+.trumpBrush3Medium {
+	width: 48px;
+	height: 62px;
+}
+
+.trumpBrush4Medium {
+	width: 49px;
+	height: 63px;
+}
+
+.trumpBrush5Medium {
+	width: 49px;
+	height: 60px;
+}
+
+.trumpBrush6Medium {
+	width: 49px;
+	height: 62px;
+}
+
+.trumpBrush7Medium {
+	width: 50px;
+	height: 78px;
+}
+
+.trumpBrush8Medium {
+	width: 48px;
+	height: 64px;
+}
+
+.trumpBrush9Medium {
+	width: 48px;
+	height: 64px;
+}
+
+
+
+
+
+/* Large brush sizes */
+
+
+.trumpBrush1Large {
+	width: 81px;
+	height: 80px;
+}
+
+.trumpBrush2Large {
+	width: 71px;
+	height: 76px;
+}
+
+.trumpBrush3Large {
+	width: 71px;
+	height: 92px;
+}
+
+.trumpBrush4Large {
+	width: 72px;
+	height: 92px;
+}
+
+.trumpBrush5Large {
+	width: 72px;
+	height: 89px;
+}
+
+.trumpBrush6Large {
+	width: 72px;
+	height: 92px;
+}
+
+.trumpBrush7Large {
+	width: 74px;
+	height: 116px;
+}
+
+.trumpBrush8Large {
+	width: 71px;
+	height: 96px;
+}
+
+
+
+.trumpBrush9Large {
+	width: 71px;
+	height: 96px;
+}
+
+
+
+
+
+
+button {
+	border:0;
+	transition: background 0.2s;
+	border-radius: 4px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#controlBar {
+	position:absolute;
+	cursor: default;
+	z-index:9999;
+	width:100%;
+	height:48px;
+	background:#F0F0F0;
+	border-bottom:2px solid #E4E0E0;
+}
+
+.controlButton {
+	font-family: 'Droid Sans', Arial;
+	font-size: 12px;
+	min-width: 40px;
+	margin-right: 5px;
+	height: 27px;
+	background: #CF181F;
+	cursor: pointer;
+	color: #fff;
+}
+
+.controlButton:hover {
+	background: #C50D14;
+}
+
+#social {
+	display:none;
+	float:left;
+	width:116px;
+	height: 45px;
+    padding: 3px 0 0 11px;
+    border-right: 1px solid #E4E2E2;
+}
+
+#clearAndSave {
+	float:left;
+	padding:10px 7px 0 9px;
+	border-right: 1px solid #E4E2E2;
+	height:45px;
+	width:168px;
+}
+
+#brushControls {
+	overflow: hidden;
+}
+
+#brushFaceOuter {
+	overflow-y: hidden;
+	max-width: 100%;
+    padding: 4px 0 0 5px;
+}
+
+#brushFaceInner {
+	min-width:322px;
+	height:37px;
+}
+
+#brushSizeLabel, #brushFaceLabel {
+	display:none;
+	float:left;
+	font-size:10px;
+	margin: 9px 8px 0 7px;
+}
+
+.brushSizeButton {
+	background: #C1C0C0;
+	cursor: pointer;
+	float: left;
+	border-radius: 21px;
+	margin: 0 5px 0 0;
+}
+
+.brushSizeButtonSelected {
+	background-color: #CF181F; 
+}
+
+.brushSizeButton:hover {
+	background: #C50D14;
+}
+
+#brushSizeButtonSmall {
+	width: 20px; height: 20px;
+}
+
+#brushSizeButtonMedium {
+	width: 25px; height: 25px;
+}
+
+#brushSizeButtonLarge {
+	width: 33px; height: 33px;
+}
+
+#brushSizeContainer {
+	display:none;
+	float:left;
+	height: 45px;
+	padding: 7px 8px 0 8px;
+	border-right: 1px solid #E4E2E2;
+}
+
+.uploadPreview {
+	width:50%;
+	border:1px dotted #ABA8A8;
+}
+
+#imgUploadURL {
+	width: 50%;
+	text-align: center;
+	font-family: inherit;
+	color: #CF181F;
+	font-size: 13px;
+	border: none;
+	padding: 4px;
+}
+
+#paintingCaption {
+	width:50%;
+	min-height:45px;
+	margin-top:10px;
+	padding:4px;
+	font-family:inherit;
+	font-size:16px;
+	border:1px solid #ABA8A8;
+}
+
+.azLink {
+	display:none;
+	margin: 21px 0 0 0;
+	padding-top: 5px;
+	border-top: 1px dotted #F3C6C7;
+}
+
+.azLink span a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #CF181F;
+	font-weight: 800;
+	margin: 13px 0 0 15px;
+	display: inline-block;
+}
+
+.azLink span a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 480px) {
+	#brushSizeContainer {
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 660px) {
+	#social {
+		display:block;
+	}
+}
+
+
+
+@media only screen and (max-width: 737px) {
+
+
+	/* Small brush sizes */
+
+	.trumpBrush1Small {
+		width: 15px;
+		height: 14px;
+	}
+
+	.trumpBrush2Small {
+		width: 13px;
+		height: 14px;
+	}
+
+	.trumpBrush3Small {
+		width: 13px;
+		height: 16px;
+	}
+
+	.trumpBrush4Small {
+		width: 14px;
+		height: 17px;
+	}
+
+	.trumpBrush5Small {
+		width: 14px;
+		height: 17px;
+	}
+
+	.trumpBrush6Small {
+		width: 14px;
+		height: 17px;
+	}
+
+	.trumpBrush7Small {
+		width: 14px;
+		height: 22px;
+	}
+
+	.trumpBrush8Small {
+		width: 14px;
+		height: 18px;
+	}
+
+
+
+
+
+
+	/* Medium brush sizes */
+
+
+	.trumpBrush1Medium {
+		width: 28px;
+		height: 27px;
+	}
+
+	.trumpBrush2Medium {
+		width: 24px;
+		height: 25px;
+	}
+
+	.trumpBrush3Medium {
+		width: 24px;
+		height: 31px;
+	}
+
+	.trumpBrush4Medium {
+		width: 25px;
+		height: 31px;
+	}
+
+	.trumpBrush5Medium {
+		width: 25px;
+		height: 30px;
+	}
+
+	.trumpBrush6Medium {
+		width: 25px;
+		height: 31px;
+	}
+
+	.trumpBrush7Medium {
+		width: 25px;
+		height: 39px;
+	}
+
+	.trumpBrush8Medium {
+		width: 24px;
+		height: 32px;
+	}
+
+
+
+
+	/* Large brush sizes */
+
+	.trumpBrush1Large {
+		width: 41px;
+		height: 40px;
+	}
+
+	.trumpBrush2Large {
+		width: 36px;
+		height: 38px;
+	}
+
+	.trumpBrush3Large {
+		width: 36px;
+		height: 46px;
+	}
+
+	.trumpBrush4Large {
+		width: 36px;
+		height: 46px;
+	}
+
+	.trumpBrush5Large {
+		width: 36px;
+		height: 44px;
+	}
+
+	.trumpBrush6Large {
+		width: 36px;
+		height: 46px;
+	}
+
+	.trumpBrush7Large {
+		width: 37px;
+		height: 58px;
+	}
+
+	.trumpBrush8Large {
+		width: 36px;
+		height: 48px;
+	}
+}
+
+
+@media only screen and (min-width: 756px) {
+	#controlBar, #clearAndSave, #brushSize, #brushSizeContainer {
+		height:55px;
+	}
+
+	#clearAndSave {
+		width: 191px;
+	}
+
+	#paintingArea {
+		top:55px;
+	}
+
+	#brushFaceInner {
+		min-width:360px;
+	}
+
+	.controlButton {
+		font-family: 'Droid Sans', Arial;
+		font-size: 14px;
+		min-width: 52px;
+		margin-right: 7px;
+		height: 32px;
+	}
+
+	#social {
+		height:55px;
+		padding:1px 0 0 11px;
+	}
+
+	#social ul li {
+    	margin-top: 4px;
+	}
+	
+	#brushSizeLabel, #brushFaceLabel {
+		display: block;
+	}
+
+	#trumpBrush1Menu {
+		width: 44px;
+		height: 43px;
+	}
+
+	#trumpBrush2Menu {
+		width: 42px;
+		height: 44px;
+	}
+
+	#trumpBrush3Menu {
+		width: 35px;
+		height: 45px;
+	}
+
+	#trumpBrush4Menu {
+		width: 35px;
+		height: 44px;
+	}
+
+	#trumpBrush5Menu {
+		width: 37px;
+		height: 44px;
+	}
+
+	#trumpBrush6Menu {
+		width: 35px;
+		height: 44px;
+	}
+
+	#trumpBrush7Menu {
+		width: 34px;
+		height: 53px;
+		margin-top: -8px;
+	}
+
+	#trumpBrush8Menu {
+		width: 34px;
+		height: 45px;
+	}
+}
+
+@media only screen and (min-width: 840px) {
+	.trumpBrushMenu {
+		margin-right: 18px;
+	}
+
+	#brushFaceInner {
+		min-width:442px;
+	}
+
+	/*
+	#brushFaceOuter {
+		overflow-y: visible;
+	}
+	*/
+	
+}
+
+@media only screen and (min-width: 1135px) {
+
+	/*.last {
+		display: block;
+	}*/
+
+	/*#brushControls {
+		float:left;
+	}*/
+
+}
